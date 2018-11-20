@@ -1,1 +1,1 @@
-console.log('dcdcdgbgd')
+console.log('dcdgbgd')
