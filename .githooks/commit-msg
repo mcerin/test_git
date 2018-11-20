@@ -1,0 +1,13 @@
+#!/bin/bash
+#coppy in /.git/hooks
+echo 'pre-commit'
+#! ./node_modules/.bin/jsdoc 
+jsdoc .\\radom_tree_generator.js -d ./docs
+#!/bin/bash
+commit_msg=$(cat .\\.git\\COMMIT_EDITMSG)
+git add .
+git commit --no-verify -am "$commit_msg"
+
+echo STATUS
+git status
+exit 1
