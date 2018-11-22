@@ -29,6 +29,9 @@ class RandomTreeGenerator extends Stream {
      * @param {int} min_leaf_depth - The first level of the tree above MaxTreeDepth that can have leaves (Default: 3).
      * @param {float} fraction_leaves_per_level - The fraction of leaves per level from min_leaf_depth onwards (Default: 0.15).
      * 
+     * @example
+     * // returns 2
+     * globalNS.method1(5, 10);
      */
 
     constructor(tree_random_state = null, sample_random_state = null, n_classes = 2, n_cat_features = 5,
