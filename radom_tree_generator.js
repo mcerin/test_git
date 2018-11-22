@@ -76,8 +76,16 @@ class RandomTreeGenerator extends Stream {
 
     prepare_for_use() {
         /**
-         * Should be called before generating the samples.
+         * Solves equations of the form a * x = b
+         * @example
+         * // returns 2
+         * globalNS.method1(5, 10);
+         * @example
+         * // returns 3
+         * globalNS.method(5, 15);
+         * @returns {Number} Returns the value of x for the equation.
          */
+
         this.bool_tree_random_state = this.tree_random_state == null ? false : true;
         this.bool_sample_random_state = this.sample_random_state == null ? false : true;
         this.random1 = new Utils(this.tree_random_state);
